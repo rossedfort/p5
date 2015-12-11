@@ -1,6 +1,6 @@
 function setup() {
-  width = 600
-  height = 400
+  width = 1920
+  height = 1080
   createCanvas(width, height);
   background(0);
   color = 255
@@ -10,9 +10,9 @@ function setup() {
 function draw() {
 
     stroke(255)
-    line(width/2,height/2,random(width), random(height));
-
     stroke(random(color), random(color), random(color))
+
+    line(width/2,height/2,random(width), random(height));
     line(width/4,height/2,random(width), random(height));
     line(3*(width/4),height/2,random(width), random(height));
 
