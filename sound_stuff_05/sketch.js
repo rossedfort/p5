@@ -1,5 +1,5 @@
 function preload(){
-  sound = loadSound('assets/kygo_wait.mp3');
+  sound = loadSound('../assets/kygo_wait.mp3');
 }
 
 function setup(){

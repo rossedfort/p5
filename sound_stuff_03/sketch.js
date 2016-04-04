@@ -2,7 +2,7 @@ var song;
 
 function preload() {
   // song = loadSound('assets/kygo_wait.mp3');
-  song = loadSound('assets/skinny_love.mp3');
+  song = loadSound('../assets/skinny_love.mp3');
 }
 
 function setup () {
