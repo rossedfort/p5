@@ -11,17 +11,21 @@ function setup () {
   height = 800;
   createCanvas(width, height);
   background(0);
+  peaks = song.getPeaks([width]);
   amp = new p5.Amplitude();
+  length = song.duration();
 }
 
 function draw () {
-  var level = amp.getLevel();
-  var size = map(level, 0, 1, 0, 800);
-  var col = map(level, 0, 1, 0, 255);
-
-  fill(0, 0, col*2);
-  stroke(0, 0, col*1.5);
-  ellipse(width/2, height/2, size*2, size*2);
+  noStroke();
+  for (var i = 0; i < peaks.length; i++) {
+    fill(i, 0, 0);
+    rect(i+2, height, 10, peaks[i]*1000);
+  }
+  for (var i = 0; i < 238; i++) {
+    sec = second();
+    ellipse(sec, 50, 2, 2)
+  }
 }
 
 function mousePressed() {

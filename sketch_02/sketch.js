@@ -1,6 +1,5 @@
 function setup() {
-  width = 1920
-  height = 1080
+4
   createCanvas(width, height);
   background(0);
   color = 255
